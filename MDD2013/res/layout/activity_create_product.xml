@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Create_product" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/Textfield_category"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:text="@string/Textfield_product"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/Tesco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/product"
+        android:src="@drawable/tesco"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Tesco"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/product"
+        android:src="@drawable/aeon"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveProduct" 
+        android:text="@string/button_save" />
+
+    <EditText
+        android:id="@+id/tesco_price"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/product"
+        android:layout_alignTop="@+id/imageView1"
+        android:ems="10"
+        android:hint="@string/Hint_Tesco_price"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/product"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/category"
+        
+        android:ems="10"
+        android:hint="@string/Hint_product" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginLeft="20dp"
+        
+        android:ems="10"
+        android:hint="@string/Hint_category" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_toLeftOf="@+id/product"
+        android:src="@drawable/giant"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/giant_price"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/jusco_price"
+        android:ems="10"
+        android:hint="@string/Hint_Giant_price"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/jusco_price"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tesco_price"
+        android:layout_below="@+id/Tesco"
+        android:ems="10"
+        android:hint="@string/Hint_Jusco_price"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

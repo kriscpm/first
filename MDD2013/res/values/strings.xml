@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MDD2013</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="message_search">Search product</string>
+    <string name="button_search">Search</string>
+    <string name="button_product">Add product</string>
+    <string name="title_activity_create_product">Create_product</string>
+    <string name="Textfield_category">Category</string>
+    <string name="Textfield_product">Product</string>
+    <string name="Textfield_retailer_1">Tesco</string>
+    <string name="Textfield_retailer_2">Jusco</string>
+    <string name="Textfield_retailer_3">Giant</string>
+    <string name="button_save">Save</string>
+    <string name="Hint_category">Category name</string>
+    <string name="Hint_product">Product name</string>
+    <string name="Hint_Tesco_price">Tesco\'s price</string>
+    <string name="Hint_Jusco_price">Aeon\'s price</string>
+    <string name="Hint_Giant_price">Giant\'s price</string>
+
+</resources>
